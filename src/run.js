@@ -6,7 +6,7 @@ const stripAnsi = require('strip-ansi');
 const fs = require('fs');
 const path = require('path');
 
-const DEFAULT_CONFIG_FILE = '.markdownlintrc';
+const DEFAULT_CONFIG_FILES = ['.markdownlint.json', '.markdownlint.yaml'];
 
 module.exports = ({ config, testPath }) => {
   const start = Date.now();
@@ -15,9 +15,11 @@ module.exports = ({ config, testPath }) => {
     files: [ testPath ]
   };
 
-  if (fs.existsSync(`${rootDir}/${DEFAULT_CONFIG_FILE}`)) {
-    options.config = require(`${rootDir}/${DEFAULT_CONFIG_FILE}`);
-  }
+  DEFAULT_CONFIG_FILES.forEach(file => {
+    if (fs.existsSync(`${rootDir}/${file}`)) {
+      options.config = require(`${rootDir}/${file}`);
+    }
+  });
 
   const results = lint.sync(options);
 
