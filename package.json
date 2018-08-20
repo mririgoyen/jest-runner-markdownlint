@@ -1,0 +1,25 @@
+{
+  "name": "jest-runner-markdownlint",
+  "version": "0.1.0",
+  "description": "Markdown Lint runner for Jest",
+  "main": "src/index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/goyney/jest-runner-markdownlint.git"
+  },
+  "author": "Michael Irigoyen <goyney@gmail.com>",
+  "license": "MIT",
+  "keywords": [
+    "jest",
+    "markdown",
+    "lint"
+  ],
+  "private": false,
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "create-jest-runner": "^0.4.0",
+    "markdownlint": "^0.11.0",
+    "strip-ansi": "^4.0.0",
+    "text-table": "^0.2.0"
+  }
+}
