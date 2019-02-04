@@ -1,7 +1,7 @@
 <div align="center">
   <img width="150" src="https://cdn.worldvectorlogo.com/logos/markdown.svg">
   <a href="https://facebook.github.io/jest/">
-    <img height="100" vspace="" hspace="25" src="https://cdn.worldvectorlogo.com/logos/jest.svg">
+    <img height="100" vspace="" hspace="25" src="https://cdn.worldvectorlogo.com/logos/jest-0.svg">
   </a>
   <h1>jest-runner-markdownlint</h1>
   <p>Markdown Lint runner for Jest</p>
