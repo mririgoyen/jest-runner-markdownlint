@@ -5,9 +5,9 @@
   "main": "src/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/goyney/jest-runner-markdownlint.git"
+    "url": "https://github.com/mririgoyen/jest-runner-markdownlint.git"
   },
-  "author": "Michael Irigoyen <goyney@gmail.com>",
+  "author": "Michael Irigoyen <michael@irigoyen.dev>",
   "license": "MIT",
   "keywords": [
     "jest",
